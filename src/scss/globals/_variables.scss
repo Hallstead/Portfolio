@@ -1,0 +1,19 @@
+:root {
+  // Colors – Light Mode
+  --color-primary: #1e3a8a; // Blue-800
+  --color-secondary: #3b82f6; // Blue-500
+  --color-bg: #ffffff;
+  --color-text: #1f2937; // Gray-800
+  --color-muted: #6b7280; // Gray-500
+
+  --spacing: 1rem;
+  --font-base: "Inter", sans-serif;
+}
+
+.dark-mode {
+  --color-primary: #60a5fa; // Lighter blue
+  --color-secondary: #93c5fd;
+  --color-bg: #1f2937; // Gray-800
+  --color-text: #f9fafb; // Gray-100
+  --color-muted: #9ca3af; // Gray-400
+}
