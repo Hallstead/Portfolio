@@ -8,6 +8,8 @@ const BioCard = (props) => {
     setShowMore(!showMore);
   };
 
+  test
+
   const titles = props.title.split("|");
   console.log(titles);
 
