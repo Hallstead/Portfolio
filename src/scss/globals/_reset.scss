@@ -1,0 +1,14 @@
+@use "../util" as u;
+
+body {
+    font-family: var(--font-base);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    @include u.theme;
+}
+
+input, textarea {
+    display: block;
+}

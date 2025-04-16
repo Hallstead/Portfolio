@@ -1,0 +1,63 @@
+.bio-card {
+  padding: var(--spacing);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-base);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+
+  &__image {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: var(--spacing);
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-size: clamp(
+      1.5rem,
+      1.2727272727272727rem + 0.9696969696969697vw,
+      2rem
+    );
+    margin-bottom: 0.5rem;
+  }
+
+  &__bio {
+    margin-bottom: var(--spacing);
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  &__skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing);
+
+    &__skill {
+      background-color: var(--color-secondary);
+      color: #fff;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__like {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+}
