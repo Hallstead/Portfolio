@@ -5,7 +5,7 @@ import SkillsGallery from "../components/SkillsGallery";
 const bioData = {
   name: "Jordon Hill",
   title: "Programming Professor | Software Engineer",
-  picture: "/Portfolio/src/assets/Hill_Jordon_1224.jpg",
+  picture: "/portfolio/src/assets/Hill_Jordon_1224.jpg",
   bio: `
       <p>
         I have a Bachelor of Science in Software Engineering and have developed multiple professional skills—cross-functional teamwork, project management, software development, and defect-free programming. I consistently meet deadlines and translate complex information into lay terms.
