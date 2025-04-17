@@ -1,11 +1,12 @@
 import React from "react";
 import BioCard from "../components/BioCard";
 import SkillsGallery from "../components/SkillsGallery";
+import portrait from "../assets/Hill_Jordon_1224.jpg";
 
 const bioData = {
   name: "Jordon Hill",
   title: "Programming Professor | Software Engineer",
-  picture: "/portfolio/src/assets/Hill_Jordon_1224.jpg",
+  picture: portrait,
   bio: `
       <p>
         I have a Bachelor of Science in Software Engineering and have developed multiple professional skills—cross-functional teamwork, project management, software development, and defect-free programming. I consistently meet deadlines and translate complex information into lay terms.
@@ -31,9 +32,8 @@ const Home = () => {
         title={bioData.title}
         picture={bioData.picture}
         bio={bioData.bio}
-        skills={bioData.skills}
       />
-      <SkillsGallery />
+      <SkillsGallery skills={bioData.skills} />
     </>
   );
 };
