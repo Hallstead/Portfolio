@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "rmdir /s /q node_modules\\.cache\\gh-pages && npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -26,5 +28,10 @@
     "globals": "^15.15.0",
     "sass-embedded": "^1.86.3",
     "vite": "^6.2.0"
+  },
+  "homepage": "https://hallstead.github.io/portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Hallstead/portfolio.git"
   }
 }

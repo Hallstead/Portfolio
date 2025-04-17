@@ -9,7 +9,7 @@ import ThemeProvider from "./components/ThemeProvider";
 const App = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/Portfolio">
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
