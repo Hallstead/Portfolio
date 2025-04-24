@@ -1,4 +1,25 @@
+@use "functions" as f;
+@use "sass:math";
+
 @mixin theme {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
+
+@mixin fluid-type($min, $max, $min-vw: 375, $max-vw: 1200) {
+  $min-rem: f.remVal($min);
+  $max-rem: f.remVal($max);
+  $min-vw-rem: f.remVal($min-vw);
+  $max-vw-rem: f.remVal($max-vw);
+
+  $factor: math.div(($max-rem - $min-rem), ($max-vw-rem - $min-vw-rem));
+  $calcRem: $min-rem - ($factor * $min-vw-rem);
+  $calcVw: $factor * 100;
+
+  font-size: clamp(
+    #{$min-rem}rem,
+    calc(#{$calcRem}rem + #{$calcVw}vw),
+    #{$max-rem}rem
+  );
+}
+
